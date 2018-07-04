@@ -7,6 +7,8 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
+    "city-timezones": "^1.0.5",
+    "moment-timezone": "^0.5.21",
     "telegraf": "^3.21.2"
   },
   "scripts": {
