@@ -1,5 +1,20 @@
 if: branch = release
+
 language: node_js
+
 node_js:
   - "8"
+
 before_deploy: "yarn"
+
+deploy:
+  provider: elasticbeanstalk
+  access_key_id: $ACCESS_KEY_ID
+  secret_access_key: 
+    secure: $SECRET_ACCESS_KEY
+  region: "us-east-2a"  
+  app: "travassistant"
+  env: "Travassistant-env"
+  bucket_name: "elasticbeanstalk-us-east-2-169183210049"
+  on:
+    branch: release
