@@ -2,7 +2,7 @@ const Telegraf = require('telegraf')
 const moment = require('moment-timezone');
 const cityTimezones = require('city-timezones');
 
-const bot = new Telegraf('');
+const bot = new Telegraf(process.env.TRAVEL_BOT_TOKEN);
 
 bot.start((ctx) => ctx.reply('Welcome!'));
 bot.help((ctx) => ctx.reply('Send me a sticker'))
