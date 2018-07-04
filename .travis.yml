@@ -13,7 +13,7 @@ deploy:
   secret_access_key: 
     secure: $SECRET_ACCESS_KEY
   region: "us-east-2"  
-  app: "travel-assistant-bot"
+  app: "travassistant"
   env: "Travassistant-env"
   bucket_name: "elasticbeanstalk-us-east-2-169183210049"
   on:
