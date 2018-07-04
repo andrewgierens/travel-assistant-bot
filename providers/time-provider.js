@@ -7,14 +7,14 @@ class TimeProvider {
     const cityLookup = cityTimezones.lookupViaCity(cityName)[0];
     if (cityLookup == null) return null;
 
-    return moment().tz(cityLookup.timezone).format('h:mm:ss a');
+    return moment().tz(cityLookup.timezone).format('h:mm a');
   }
 
   static getFormattedTimeFromCity(cityName) {
     const cityLookup = cityTimezones.lookupViaCity(cityName)[0];
     if (cityLookup == null) return null;
     
-    const time = moment().tz(cityLookup.timezone).format('h:mm:ss a');
+    const time = moment().tz(cityLookup.timezone).format('h:mm a');
     return `The time in *${cityLookup.city}, ${cityLookup.country}* is: ${time}`;
   }
 }
