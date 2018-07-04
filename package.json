@@ -1,0 +1,15 @@
+{
+  "name": "travel-assistant-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:andrewgierens/travel-assistant-bot.git",
+  "author": "Andrew Gierens <apgierens@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "telegraf": "^3.21.2"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
